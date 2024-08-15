@@ -1,0 +1,167 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 56px; /* Height of the fixed navbar */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+main p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Articles */
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e9e9e9;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    justify-content: center; /* 水平居中对齐 */
+}
+
+.card-img-top {
+    width: 83.5px; /* 图标宽度 */
+    height: 83.5px; /* 图标高度 */
+    border-radius: 10px; /* 圆角大小 */
+    object-fit: cover; /* 确保图标填充整个区域 */
+    margin-right: 15px; /* 图标与文字之间的间距 */
+}
+
+.card-body {
+    text-align: center; /* 使文本在卡片内居中 */
+}
+
+.card-title {
+    margin: 0; /* 去除标题的外边距 */
+}
+
+.card-text {
+    margin-top: 5px; /* 文字上方的间距 */
+}
+
